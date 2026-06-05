@@ -1,0 +1,9 @@
+# Cartelle di compilazione
+bin/
+obj/
+
+# File di configurazione utente di Visual Studio
+.vs/
+*.user
+*.suo
+*.vshost.*
