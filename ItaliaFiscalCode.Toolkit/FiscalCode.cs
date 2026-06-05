@@ -18,7 +18,12 @@ namespace ItaliaFiscalCode.Toolkit
 		private const string vocals = "AEIOU";
 		public FiscalCode() { }
 
-		#region validazione
+		#region validation
+		/// <summary>
+		/// Verify last char of Fiscal Code
+		/// </summary>
+		/// <param name="fiscalCode">Fiscal Code</param>
+		/// <returns>True if ok</returns>
 		public static bool CheckDigit(string fiscalCode)
 		{
 			try
@@ -68,6 +73,12 @@ namespace ItaliaFiscalCode.Toolkit
 		#endregion
 
 		#region match
+		/// <summary>
+		/// Verify if Fiscal Code match with Person Data
+		/// </summary>
+		/// <param name="_info">Person Data</param>
+		/// <param name="fiscalCode">Fiscal Code</param>
+		/// <returns>True if ok</returns>
 		public static bool MatchPerson(PersonInfo _info, string fiscalCode)
 		{
 
@@ -148,6 +159,11 @@ namespace ItaliaFiscalCode.Toolkit
 		#endregion
 
 		#region build
+		/// <summary>
+		/// Build Fiscal Code with Person Data
+		/// </summary>
+		/// <param name="_info">Person data</param>
+		/// <returns>Outcome of operation</returns>
 		public static OutcomeOp BuildFiscalCode(PersonInfo _info)
 		{
 			OutcomeOp res = new OutcomeOp();
