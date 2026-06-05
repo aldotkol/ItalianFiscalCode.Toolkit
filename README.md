@@ -5,6 +5,7 @@ A lightweight C# (.NET Framework) library for managing, validating, cross-checki
 ## Functionality
 * **Formal validation:** Verifies the correctness of the check digit based on the official algorithm.
 * **Personal Data Correspondence:** Check if a tax code corresponds to a person's real data (Name, Surname, Date of Birth, Gender, Municipality).
+* **Build Fiscal Code:** Build of Fiscal Code with person data
 
 ## How to use it
 
